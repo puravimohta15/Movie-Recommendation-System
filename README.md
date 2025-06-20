@@ -19,6 +19,27 @@ This system uses this core approach:
   Recommends movies similar to one the user liked based on genres, cast, director, and plot, among other factors.
 
 ---
+## Project Structure:
+movie-recommender-system/
+│
+├── notebooks/ # Jupyter notebooks for EDA and modeling
+│ └── movie-recommender-system.ipynb
+│
+├── src/ # Python scripts for modular code
+│ ├── data_loader.py
+│ ├── recommender.py
+│ └── utils.py
+│
+├── app/ # Streamlit or Flask app for UI
+│ └── main.py
+│
+├── data/ # (Git-ignored) dataset storage
+│
+├── models/ # (Git-ignored) saved models
+│
+├── requirements.txt # Dependencies
+├── .gitignore # Files to ignore
+└── README.md # You're here!
 
 ## 📦 Installation
 
@@ -33,7 +54,7 @@ pip install -r requirements.txt
 3. Dataset 
 Uses the TMDB 5000 movies dataset, available on kaggle: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
 
-## M-& Future Scope
+## Future Scope
 1. Create login and signup functionality.
 2. Add rating and feedback mechanism.
 3. Personalized recommendations using collaborative filtering.
